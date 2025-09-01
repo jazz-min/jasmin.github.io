@@ -1,13 +1,46 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
+<style>
+    .certification-block {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 10px;
+}
 
+.cert-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    transition: background-color 0.2s ease;
+    padding: 6px 8px;
+    border-radius: 6px;
+}
+
+.cert-link:hover {
+    background-color: #f3f3f3;
+}
+
+.cert-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    object-fit: contain;
+}
+
+
+
+
+</style>
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>My Portfolio</title>
-	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-	<link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -15,265 +48,276 @@
 </head>
 
 <body>
-    <div id="mobile-menu-open" class="shadow-large">
-        <i class="fa fa-bars" aria-hidden="true"></i>
+<div id="mobile-menu-open" class="shadow-large">
+    <i class="fa fa-bars" aria-hidden="true"></i>
+</div>
+<!-- End #mobile-menu-toggle -->
+<header>
+    <div id="mobile-menu-close">
+        <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
     </div>
-    <!-- End #mobile-menu-toggle -->
-    <header>
-        <div id="mobile-menu-close">
-            <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
-        </div>
-        <ul id="menu" class="shadow">
-            <li>
-                <a href="#about">About</a>
-            </li>
-            <li>
-                <a href="#experience">Experience</a>
-            </li>
-            <li>
-                <a href="#education">Education</a>
-            </li>
-            <li>
-                <a href="#projects">Projects</a>
-            </li>
-            <li>
-                <a href="#skills">Skills</a>
-            </li>
-            <li>
-                <a href="#contact">Contact</a>
-            </li>
-        </ul>
-    </header>
-    <!-- End header -->
+    <ul id="menu" class="shadow">
+        <li>
+            <a href="#about">About</a>
+        </li>
+        <li>
+            <a href="#certifications">Certifications</a>
+        </li>
+        <li>
+            <a href="#projects">Projects</a>
+        </li>
+        <li>
+            <a href="#skills">Skills</a>
+        </li>
+        <li>
+            <a href="#contact">Contact</a>
+        </li>
+    </ul>
+</header>
+<!-- End header -->
 
-    <div id="lead">
-        <div id="lead-content">
-            <h1>Ryan Fitzgerald</h1>
-            <h2>Software Engineer</h2>
-            <a href="#" class="btn-rounded-white">Download Resume</a>
-        </div>
-        <!-- End #lead-content -->
+<div id="lead">
+    <div id="lead-content">
+        <h1>Jasmin Joseph</h1>
+        <h2>Data Engineer/Analyst | GCP & AWS Certified | Building modern data pipelines, analytics platforms, and data-driven
+            solutions</h2>
+    </div>
+    <!-- End #lead-content -->
 
-        <div id="lead-overlay"></div>
+    <div id="lead-overlay"></div>
 
-        <div id="lead-down">
+    <div id="lead-down">
             <span>
                 <i class="fa fa-chevron-down" aria-hidden="true"></i>
             </span>
-        </div>
-        <!-- End #lead-down -->
     </div>
-    <!-- End #lead -->
+    <!-- End #lead-down -->
+</div>
+<!-- End #lead -->
 
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <h2 class="heading">About Me</h2>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h2 class="heading">About Me</h2>
+            </div>
+            <div class="col-md-8">
+                <p>
+                    I’m a data professional with over 10 years of experience in building reliable data pipelines and
+                    delivering insights through analysis and visualization.
+                    I specialize in designing scalable data pipelines and transforming raw data into actionable insights
+                    to support data-driven decision-making across organizations.
+                </p>&nbsp;
+                <p>
+                    My expertise includes building robust ETL/ELT workflows using Python, SQL and tools like Airflow,
+                    dbt, and Dagster. I’ve worked extensively with cloud platforms including Google Cloud (BigQuery,
+                    Cloud Storage) and AWS, and have hands-on experience with relational databases, and real-time data
+                    processing using Spark and Kafka.
+                </p>&nbsp;
+                <p>
+                    I’m also skilled in developing dashboards and reports using Looker Studio and Tableau, and I’m
+                    comfortable supporting stakeholders with data analysis, ad hoc queries, and business intelligence
+                    use cases. I hold multiple cloud certifications including GCP Professional Data Engineer, AWS
+                    Solutions Architect, and Microsoft Azure Data Scientist.
+                </p>&nbsp;
+                <p>
+                    I bring a strong foundation in both data infrastructure and analytics, thrive in Agile environments,
+                    and enjoy collaborating across technical and non-technical teams to build high-impact data
+                    solutions.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- End #about -->
+
+
+<div id="certifications">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h2 class="heading">Certifications</h2>
+            </div>
+            <div class="col-md-8">
+                <div id="certification">
+                    <div class="certification-block">
+                        <a class="cert-link"
+                           href="https://www.credly.com/earner/earned/badge/fa21b976-01bf-4c2e-9863-a64167628f0f"
+                           target="_blank">
+                            <img src="images/Google_Cloud_Logo.png" alt="Google Cloud" class="cert-icon">
+                            Google Cloud Certified - Professional Data Engineer
+                        </a>
+                        <a class="cert-link" href="https://learn.microsoft.com/en-us/users/jasminjoseph-4998/credentials/49b0143d434d7086" target="_blank">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg"
+                                 alt="Microsoft"
+                                 class="cert-icon">
+                            Microsoft Certified: Azure Data Scientist Associate
+                        </a>
+                        <a class="cert-link" href="https://www.coursera.org/account/accomplishments/professional-cert/R4Z7VQ7VZVNV" target="_blank">
+                            <img src="images/Google_Cloud_Logo.png" alt="Google Cloud" class="cert-icon">
+                            Google IT Automation with Python
+                        </a>
+                        <a class="cert-link" href="https://www.credly.com/earner/earned/badge/73fb7f1a-fa7e-4e4f-b9cc-ff4f981c2ec2" target="_blank">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg"
+                                 alt="AWS"
+                                 class="cert-icon">
+                            AWS Certified Developer – Associate
+                        </a>
+                        <a class="cert-link" href="https://www.credly.com/earner/earned/badge/0a0ee747-cdf0-467e-9904-e09fa581b2cd" target="_blank">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg"
+                                 alt="AWS"
+                                 class="cert-icon">
+                            AWS Certified Solutions Architect – Associate
+                        </a>
+                    </div>
                 </div>
-                <div class="col-md-8">
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<!-- End #certification -->
+<div id="projects" class="background-alt">
+    <h2 class="heading">Projects</h2>
+    <div class="container">
+        <class="row">
+            <div class="project shadow-large">
+                <div class="project-image">
+                    <img src="images/earthquake.png"/>
+                </div>
+                <!-- End .project-image -->
+                <div class="project-info">
+                    <h3>Earthquake Data Pipeline</h3>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat. Donec
-                        eu vehicula neque. Donec viverra lorem nunc, tempus euismod eros sollicitudin ut. Quisque et tincidunt libero. Donec id pharetra justo. Proin euismod lacinia dolor, eu scelerisque justo tempus pharetra. Vivamus nunc justo, finibus
-                        ut nisl sed, euismod rhoncus nulla. Proin sed magna egestas, egestas ante et, congue eros. In consequat, mauris dapibus tincidunt suscipit, ex libero aliquet diam, at maximus risus enim non leo.
+                        Built an end-to-end data pipeline to process and analyze earthquake data from the USGS API.
+                        Leveraged Apache Airflow for orchestration, dbt for data modeling, and PostgreSQL as the warehouse.
+                        Visualized results in Apache Superset, including global earthquake maps, magnitude distributions,
+                        and daily activity trends. This project demonstrates modern data engineering practices across
+                        ingestion, transformation, and visualization.
                     </p>
+                    <a href="https://github.com/jazz-min/earthquake-data-pipeline">View Project</a>
                 </div>
+                <!-- End .project-info -->
             </div>
-        </div>
-    </div>
-    <!-- End #about -->
+            <!-- End .project -->
 
-    <div id="experience" class="background-alt">
-        <h2 class="heading">Experience</h2>
-        <div id="experience-timeline">
-            <div data-date="September 2015 – September 2016">
-                <h3>Employer Name</h3>
-                <h4>Job Title</h4>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
-                </p>
-            </div>
-
-            <div data-date="September 2015 – September 2016">
-                <h3>Employer Name</h3>
-                <h4>Job Title</h4>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
-                </p>
-            </div>
-
-            <div data-date="September 2015 – September 2016">
-                <h3>Employer Name</h3>
-                <h4>Job Title</h4>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
-                </p>
-            </div>
-        </div>
-    </div>
-    <!-- End #experience -->
-
-    <div id="education">
-        <h2 class="heading">Education</h2>
-        <div class="education-block">
-            <h3>University of Ottawa</h3>
-            <span class="education-date">Sept 2016 - Sept 2017</span>
-            <h4>Bachelor of Science in Computer Science</h4>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
-            </p>
-        </div>
-        <!-- End .education-block -->
-
-        <div class="education-block">
-            <h3>University of Ottawa</h3>
-            <span class="education-date">Sept 2016 - Sept 2017</span>
-            <h4>Bachelor of Science in Computer Science</h4>
-            <ul>
-                <li>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </li>
-                <li>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </li>
-                <li>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </li>
-            </ul>
-        </div>
-        <!-- End .education-block -->
-    </div>
-    <!-- End #education -->
-
-    <div id="projects" class="background-alt">
-        <h2 class="heading">Projects</h2>
-        <div class="container">
-            <div class="row">
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/project.jpg" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Project Name Here</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
-                        </p>
-                        <a href="#">View Project</a>
-                    </div>
-                    <!-- End .project-info -->
+            <div class="project shadow-large">
+                <div class="project-image">
+                    <img src="images/sqlwarehouse.png"/>
                 </div>
-                <!-- End .project -->
+                <!-- End .project-image -->
+                <div class="project-info">
+                    <h3>SQL Data Warehouse</h3>
+                <!-- SQL Data Warehouse Project -->
 
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/project.jpg" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Project Name Here</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
-                        </p>
-                        <a href="#">View Project</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-            </div>
-        </div>
-    </div>
-    <!-- End #projects -->
-
-    <div id="skills">
-        <h2 class="heading">Skills</h2>
-        <ul>
-            <li>JavaScript</li>
-            <li>Python</li>
-            <li>Ruby</li>
-            <li>Go</li>
-            <li>Node.js</li>
-            <li>AngularJs</li>
-            <li>React</li>
-            <li>Elixir</li>
-            <li>Java</li>
-            <li>C</li>
-            <li>C#</li>
-            <li>C++</li>
-            <li>Ruby on Rails</li>
-            <li>JavaScript</li>
-            <li>Python</li>
-            <li>Ruby</li>
-            <li>Go</li>
-            <li>Node.js</li>
-            <li>AngularJs</li>
-            <li>React</li>
-            <li>Elixir</li>
-            <li>Java</li>
-            <li>C</li>
-            <li>C#</li>
-            <li>C++</li>
-            <li>Ruby on Rails</li>
+    <div class="full-description">
+        <p>
+            A modern <strong>PostgreSQL-based data warehouse</strong> designed to support scalable analytics and reporting.
+            This project demonstrates end-to-end data engineering practices, including:
+        </p>
+        <ul style="text-align: left">
+            <li><strong>Data modeling & schema design</strong> using the Medallion (Bronze–Silver–Gold) architecture.</li>
+            <li><strong>ETL pipelines</strong> to extract, transform, and load raw transactional data.</li>
+            <li><strong>Data quality checks</strong> and validation for accuracy and reliability.</li>
+            <li><strong>Analytics-ready views</strong> for business intelligence and performance insights.</li>
+            <li><strong>Query optimization</strong> for efficient analysis at scale.</li>
         </ul>
-    </div>
-    <!-- End #skills -->
+        <p>
+            The project highlights best practices in <strong>data architecture, integration, and transformation</strong>,
+            delivering clean, reliable datasets ready for business decision-making.
+        </p>
 
-    <div id="contact">
-        <h2>Get in Touch</h2>
-        <div id="contact-form">
-            <form method="POST" action="https://formspree.io/email@email.com">
-                <input type="hidden" name="_subject" value="Contact request from personal website" />
-                <input type="email" name="_replyto" placeholder="Your email" required>
-                <textarea name="message" placeholder="Your message" required></textarea>
-                <button type="submit">Send</button>
-            </form>
-        </div>
-        <!-- End #contact-form -->
-    </div>
-    <!-- End #contact -->
-
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-5 copyright">
-                    <p>
-                        Copyright &copy; <span id="current-year">2022</span> YOUR NAME
-                    </p>
+                    <a href="https://github.com/jazz-min/sql-datawarehouse-project" target="_blank" class="btn btn-primary">View Project</a>
                 </div>
-                <div class="col-sm-2 top">
+                <!-- End .project-info -->
+            </div>
+            <!-- End .project -->
+        </div>
+    </div>
+</div>
+<!-- End #projects -->
+
+<div id="skills">
+    <h2 class="heading">Skills</h2>
+    <ul>
+        <li>Python</li>
+        <li>SQL</li>
+        <li>Java</li>
+        <li>Unix Shell scripting</li>
+        <li>Apache Spark</li>
+        <li>PySpark</li>
+        <li>Kafka</li>
+        <li>Hadoop</li>
+        <li>DBT</li>
+        <li>Airflow</li>
+        <li>Dagster</li>
+        <li>Airbyte</li>
+        <li>BigQuery</li>
+        <li>Cloud Storage</li>
+        <li>Tableau</li>
+        <li>Looker Studio</li>
+        <li>Google Cloud Platform (GCP)</li>
+        <li>Amazon Web Services (AWS)</li>
+        <li>Microsoft Azure</li>
+        <li>Git</li>
+        <li>GitHub</li>
+        <li>Jenkins</li>
+        <li>Terraform</li>
+        <li>Docker</li>
+        <li>JIRA</li>
+        <li>VSCode</li>
+        <li>IntelliJ</li>
+        <li>PyCharm</li>
+        <li>Linux</li>
+    </ul>
+</div>
+<!-- End #skills -->
+
+<!-- Contact -->
+<section class="contact section" id="contact">
+    <div class="container">
+        <h2 class="section__title">Get in Touch</h2>
+        <p class="contact__text">Interested in working together or have a question? Let’s connect.</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/jasmin-joseph-a3430a68/" target="_blank">linkedin.com/in/jasmin-joseph-a3430a68</a>
+        </p>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-5 copyright">
+                <p>
+                    Copyright &copy; <span id="current-year">2025</span> Jasmin Joseph
+                </p>
+            </div>
+            <div class="col-sm-2 top">
                     <span id="to-top">
                         <i class="fa fa-chevron-up" aria-hidden="true"></i>
                     </span>
-                </div>
-                <div class="col-sm-5 social">
-                    <ul>
-                        <li>
-                            <a href="https://github.com/" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://stackoverflow.com/" target="_blank"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://linkedin.com/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                        </li>
-                    </ul>
-                </div>
+            </div>
+            <div class="col-sm-5 social">
+                <ul>
+                    <li>
+                        <a href="https://github.com/jazz-min" target="_blank"><i class="fa fa-github"
+                                                                                 aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/jasmin-joseph-a3430a68/" target="_blank"><i
+                                class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
             </div>
         </div>
-    </footer>
-    <!-- End footer -->
+    </div>
+</footer>
+<!-- End footer -->
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="js/scripts.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/scripts.min.js"></script>
 </body>
 
 </html>
