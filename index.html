@@ -209,29 +209,18 @@
                 <div class="full-description">
                     <p>
                         A fully automated <strong>data pipeline</strong> for processing and analyzing global
-                        earthquake events using modern
-                        data engineering tools. This project demonstrates the design and orchestration of a
-                        real-time workflow, including:
+                        earthquake events. The project includes:
                     </p>
                     <ul style="text-align: left">
-                        <li><strong>Data ingestion</strong> from the USGS Earthquake API.</li>
-                        <li><strong>Data transformation & modeling</strong> with dbt using the
-                            Medallion(Bronze–Silver–Gold) approach.
-                        </li>
-                        <li><strong>Pipeline orchestration</strong> with Apache Airflow for scheduling and
-                            monitoring.
-                        </li>
-                        <li><strong>Data storage & querying</strong> in PostgreSQL for structured analytics.
-                        </li>
-                        <li><strong>Interactive dashboards</strong> in Apache Superset (geospatial and
-                            statistical insights).
-                        </li>
-                        <li><strong>Scalable design</strong> extendable for streaming and large datasets.</li>
+                        <li><strong>Ingestion:</strong> Idempotent loading from USGS API with raw JSON preservation</li>
+                        <li><strong>Transformation:</strong> dbt models with data quality tests (staging → marts)</li>
+                        <li><strong>Orchestration:</strong> Apache Airflow with configurable backfills</li>
+                        <li><strong>REST API:</strong> FastAPI service with circuit breaker, exponential backoff, and Prometheus metrics</li>
+                        <li><strong>Visualization:</strong> Apache Superset dashboards with geospatial and statistical insights</li>
+                        <li><strong>Storage:</strong> PostgreSQL with schema separation and connection pooling</li>
                     </ul>
                     <p>
-                        The project showcases expertise in <strong>end-to-end data engineering</strong>, from
-                        raw ingestion to insightful
-                        analytics, with a focus on automation, reliability, and scalability.
+                        Demonstrates <strong>end-to-end data engineering</strong> and backend development with a focus on reliability and observability.
                     </p>
                 </div>
                 <a href="https://github.com/jazz-min/earthquake-data-pipeline">View Project</a>
