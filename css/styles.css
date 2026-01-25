@@ -525,6 +525,7 @@ footer {
     color: #374054;
     margin-bottom: 50px;
     text-align: left;
+    display: block;
 }
 
 .project {
